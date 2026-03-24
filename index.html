@@ -11,6 +11,7 @@
             --bg: #f8fafc; 
             --card-bg: #ffffff;
             --text: #1e293b;
+            --link-hover: #3b82f6;
         }
         body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
         
@@ -21,18 +22,18 @@
 
         .container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
         
-        /* Live Infrastructure Section */
+        /* Live Infrastructure Section - Enhanced */
         .live-access {
             background: #f0fdf4;
-            border: 1.5px solid #bbf7d0;
+            border: 2px solid #bbf7d0;
             border-radius: 16px;
             padding: 25px;
             margin-bottom: 40px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
-        .live-access h3 { color: #065f46; margin-top: 0; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
-        .infra-link { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--primary); font-weight: 600; margin: 12px 0; transition: 0.2s; border-bottom: 1px solid transparent; width: fit-content; }
-        .infra-link:hover { color: var(--accent); border-bottom: 1px solid var(--accent); }
+        .live-access h3 { color: #065f46; margin-top: 0; font-size: 1.3rem; display: flex; align-items: center; gap: 10px; }
+        .infra-link { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--primary); font-weight: 700; margin: 15px 0; transition: 0.3s; padding: 8px; border-radius: 8px; }
+        .infra-link:hover { background: white; color: var(--link-hover); transform: translateX(10px); }
 
         /* Widget Cards */
         .widget-card { 
@@ -44,25 +45,26 @@
             border: 1px solid #e2e8f0; 
             transition: 0.3s ease;
         }
-        .widget-card h2 { color: var(--primary); margin-top: 0; font-size: 1.6rem; display: flex; align-items: center; gap: 12px; }
+        .widget-card h2 { color: var(--primary); margin-top: 0; font-size: 1.6rem; display: flex; align-items: center; gap: 12px; border-left: 5px solid var(--accent); padding-left: 15px; }
         
         .preview-box { background: #f1f5f9; border: 2px dashed #cbd5e1; padding: 25px; border-radius: 12px; margin: 20px 0; text-align: center; }
-        .code-label { font-weight: bold; color: var(--primary); margin-bottom: 10px; display: block; font-size: 0.9rem; }
+        .code-label { font-weight: bold; color: var(--primary); margin-bottom: 10px; display: block; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; }
         .code-snippet { background: #1e293b; color: #38bdf8; padding: 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85rem; overflow-x: auto; border: 1px solid #334155; }
 
         /* Support Section */
         .support-card { background: #fff; border: 2px solid var(--accent); border-radius: 20px; padding: 40px; text-align: center; margin-top: 60px; }
         .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 25px; }
-        .btn { display: inline-flex; align-items: center; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; font-size: 1rem; }
+        .btn { display: inline-flex; align-items: center; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; font-size: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .btn-coffee { background: #FFDD00; color: #000; }
         .btn-kofi { background: #29abe0; color: #fff; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
 
         /* Footer */
-        .footer { background: var(--primary); color: white; text-align: center; padding: 60px 20px; margin-top: 80px; border-top: 5px solid var(--accent); }
+        .footer { background: var(--primary); color: white; text-align: center; padding: 60px 20px; margin-top: 80px; border-top: 8px solid var(--accent); }
         .footer-text { font-size: 1.1rem; font-weight: 600; margin-bottom: 15px; }
         .social-links { margin: 20px 0; font-size: 1rem; }
         .social-links a { color: var(--accent); text-decoration: none; margin: 0 10px; font-weight: bold; transition: 0.3s; }
-        .social-links a:hover { color: white; }
+        .social-links a:hover { color: white; text-decoration: underline; }
         .footer-sub { font-size: 0.9rem; opacity: 0.7; margin-top: 20px; font-style: italic; }
     </style>
 </head>
@@ -76,17 +78,23 @@
     <div class="container">
         
         <div class="live-access">
-            <h3>🚀 Live Access & Infrastructure</h3>
-            <p style="margin: 0 0 15px 0; font-size: 0.95rem; color: #166534;">Our ecosystem is distributed across multiple platforms for maximum uptime:</p>
-            <a href="https://sites.google.com/view/rmvapexgroup" target="_blank" class="infra-link">🌐 <strong>Main Website:</strong> RMV APEX GROUP - Google Sites Hub</a>
-            <a href="https://rmvapexgroup.blogspot.com/" target="_blank" class="infra-link">⚡ <strong>Backup Hub:</strong> RMV Official Blogger Site</a>
+            <h3>🌐 Official RMV Ecosystem</h3>
+            <p style="margin: 0 0 15px 0; font-size: 0.95rem; color: #166534; font-weight: 500;">Connect with our official hubs for the latest updates and advanced tools:</p>
+            
+            <a href="https://sites.google.com/view/rmvapexgroup" target="_blank" class="infra-link">
+                <span>🏢</span> <strong>Main Authority Hub:</strong> RMV APEX GROUP (Google Sites)
+            </a>
+            
+            <a href="https://rmvapexgroup.blogspot.com/" target="_blank" class="infra-link">
+                <span>📝</span> <strong>Official Blog:</strong> RMV Updates & Knowledge Base (Blogger)
+            </a>
         </div>
         
         <div class="widget-card">
             <h2>🚩 Official Branding Badge</h2>
-            <p>Show your support for our mission by adding this badge to your website footer.</p>
+            <p>Help spread the mission by adding this live branding badge to your digital assets.</p>
             <div class="preview-box">
-                <a href="https://sites.google.com/view/rmvapexgroup" target="_blank" style="background:#0f172a; color:#f59e0b; padding:10px 22px; border-radius:50px; text-decoration:none; font-weight:bold; border:2px solid #f59e0b; display: inline-block;">
+                <a href="https://sites.google.com/view/rmvapexgroup" target="_blank" style="background:#0f172a; color:#f59e0b; padding:12px 28px; border-radius:50px; text-decoration:none; font-weight:bold; border:2.5px solid #f59e0b; display: inline-block;">
                     Powered by RMV APEX GROUP 🚩
                 </a>
             </div>
@@ -96,9 +104,9 @@
 
         <div class="widget-card">
             <h2>💰 Financial Micro-Widget</h2>
-            <p>A lightweight EMI calculator for your financial blog or website.</p>
+            <p>A high-performance mini EMI calculator for your financial blog or platform.</p>
             <div class="preview-box">
-                <p style="color: #94a3b8; font-style: italic;">[Widget Preview Loading via Vercel...]</p>
+                <p style="color: #94a3b8; font-style: italic;">[Interactive Widget Preview Loading via Vercel...]</p>
             </div>
             <span class="code-label">Copy Embed Code:</span>
             <div class="code-snippet">&lt;iframe src="https://rmv-viral-open.vercel.app/widgets/mini-calc.html" width="100%" height="250px" frameborder="0"&gt;&lt;/iframe&gt;</div>
@@ -106,7 +114,7 @@
 
         <div class="support-card">
             <h2>❤️ Support the Mission</h2>
-            <p>Help us build 9 paths of growth for the digital community. Your support keeps these tools open-source!</p>
+            <p>Fuel our journey of building 9 paths of growth. Your contribution keeps our tools free and accessible!</p>
             <div class="btn-group">
                 <a href="https://buymeacoffee.com/rameshmewalalvishwakarma" target="_blank" class="btn btn-coffee">☕ Buy Me a Coffee</a>
                 <a href="https://ko-fi.com/rameshmewalalvishwakarma" target="_blank" class="btn btn-kofi">🌹 Support on Ko-fi</a>
