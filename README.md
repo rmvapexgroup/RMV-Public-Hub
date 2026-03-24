@@ -1,46 +1,32 @@
-# 🚩 RMV APEX GROUP - Global Digital Toolbox
-**Official Repository by Ramesh Mewalal Vishwakarma**
+# 🌐 RMV PUBLIC HUB | RMV APEX GROUP 🚩
 
-Welcome to the digital headquarters of **RMV APEX GROUP**. We specialize in providing high-performance, professional-grade financial, tax, and utility tools designed to simplify complex calculations and empower your growth.
-
----
-
-## 🚀 Live Access
-Our tools are hosted on high-speed cloud infrastructure for maximum uptime:
-- **🌐 Main Website:** [RMV APEX GROUP - Live Site](https://rmv-public-hub.vercel.app)
-- **⚡ Backup Site:** [Google Sites Hub](https://sites.google.com/view/rmvapexgroup/)
+The central intelligence repository and deployment hub for **RMV APEX GROUP**, managed by **Ramesh Mewalal Vishwakarma**.
 
 ---
 
-## 🛠️ Featured Tools Inventory
-We are building a library of 70+ professional tools, including:
-- **Finance:** Advanced EMI Calculators, Loan Eligibility Checkers.
-- **Taxation:** GST Helper, Income Tax Slabs & Planning.
-- **Utility:** YouTube Thumbnail Downloader (HD), Web Development Widgets.
-- **Business:** Strategic Consulting & Financial Governance Tools.
+## 🏗️ Our Ecosystem
+Access our official platforms for tools and knowledge:
+* 🏢 **Primary Hub:** [Google Sites Authority](https://sites.google.com/view/rmvapexgroup)
+* ⚡ **Knowledge Base:** [RMV Blogger Official](https://rmvapexgroup.blogspot.com/)
+* 💼 **Services:** [WCard Portfolio](https://ramesh27952.wcard.me/services)
+* 💬 **Support:** [Direct WhatsApp (+91 8652025006)](https://wa.me/918652025006)
 
 ---
 
-## 🌐 Connect with Our Global Ecosystem
-Join our vast network of communities and resources:
-
-### 📢 Official Channels & Communication
-- **🟢 WhatsApp Official:** [R M V Apex Group Channel](https://whatsapp.com/channel/0029Vb77sCJLikg2rvaE9M05)
-- **🔵 Telegram Official:** [RMV Apex Group Public Channel](https://t.me/RMVApexGroupPublicChannel)
-- **💬 Direct Contact:** [WhatsApp Message](https://wa.me/919820806790) | [Messenger](https://m.me/rmvapexgroups)
-
-### 💼 Professional & Social Media
-- **LinkedIn:** [RMV APEX GROUP Company Page](https://www.linkedin.com/company/rmvapexgroup/)
-- **Facebook:** [Official Brand Page](https://www.facebook.com/share/1AdaBQndGk/)
-- **YouTube:** [RMV APEX GROUP Main Channel](https://www.youtube.com/@rmvapexgroup)
-- **X (Twitter):** [Follow @rmvapexgroup](https://x.com/rmvapexgroup)
-
-### 🛍️ Marketplace & Stores
-- **Gumroad:** [Premium Tool Vault](https://rmvapexgroup.gumroad.com/)
-- **Payhip:** [Digital Store](https://payhip.com/rmvapex)
-- **Amazon:** [RMV Apex Recommended](https://amzn.to/4b2gQcu)
+## 🛠️ Project Highlights
+- **Financial Tools:** High-precision EMI and Loan Checkers.
+- **Viral Assets:** Open-source widgets for web developers.
+- **9 Paths of Growth:** Strategic digital development for the community.
 
 ---
+
+## 📱 Global Social Network
+Connect with us on over 17+ platforms:
+[YouTube](https://www.youtube.com/@rmvapexgroup) | [LinkedIn](https://www.linkedin.com/in/rmvapexgroup/) | [Facebook](https://www.facebook.com/rmvapexgroups/) | [Instagram](https://www.instagram.com/rmvapexgroups) | [Substack](https://substack.com/@rmvapexgroup) | [Medium](https://medium.com/@rmvapexgroup) | [Reddit](https://www.reddit.com/u/rmvapexgroup/)
+
+---
+**© 2026 RMV APEX GROUP** | *Driven by Intelligence. Powered by Community.* 🚩
+
 
 ## ❤️ Support the Mission
 If our tools help you save time and money, consider supporting our journey toward building 9 paths of growth:
