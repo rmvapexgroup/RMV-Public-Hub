@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMV APEX GROUP | Official Digital Hub 🚩</title>
+    <style>
+        :root { --primary: #1e293b; --accent: #f59e0b; --text: #f8fafc; --card-bg: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f1f5f9; color: #1e293b; }
+        
+        /* Hero Section */
+        .hero { background: var(--primary); color: white; padding: 80px 20px; text-align: center; border-bottom: 10px solid var(--accent); }
+        .hero h1 { font-size: 3rem; margin: 0; letter-spacing: 2px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+
+        /* Grid System */
+        .container { max-width: 1200px; margin: -50px auto 50px; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+
+        /* Tool Cards */
+        .card { background: var(--card-bg); padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: 0.3s ease; text-decoration: none; color: inherit; border: 1px solid #e2e8f0; position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-10px); border-color: var(--accent); }
+        .card h3 { color: var(--primary); margin-top: 0; }
+        .card p { font-size: 0.9rem; color: #64748b; }
+        .badge { position: absolute; top: 10px; right: 10px; background: var(--accent); color: white; padding: 5px 10px; border-radius: 5px; font-size: 10px; font-weight: bold; }
+
+        /* Support Section */
+        .support { text-align: center; padding: 40px; background: white; border-radius: 20px; margin-top: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .btn { display: inline-block; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin: 10px; transition: 0.3s; }
+        .btn-coffee { background: #FFDD00; color: black; }
+        .btn-kofi { background: #29abe0; color: white; }
+        .btn-wa { background: #25d366; color: white; }
+
+        footer { background: var(--primary); color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
+        .social-links a { color: var(--accent); margin: 0 10px; text-decoration: none; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>RMV APEX GROUP 🚩</h1>
+        <p>Professional Financial, Tax, & Digital Utility Tools</p>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            <a href="./yt-thumbnail/" class="card">
+                <span class="badge">POPULAR</span>
+                <h3>🎥 YT Thumbnail Downloader</h3>
+                <p>Download YouTube thumbnails in 4K, HD, and SD quality instantly.</p>
+            </a>
+
+            <a href="./emi-calculator/" class="card">
+                <span class="badge">FINANCE</span>
+                <h3>💰 Advanced EMI Calculator</h3>
+                <p>Calculate loans with interactive graphs and amortization schedules.</p>
+            </a>
+
+            <a href="https://rmvapexgroup.gumroad.com/" class="card">
+                <span class="badge">PRO</span>
+                <h3>🔐 Premium SaaS Vault</h3>
+                <p>Access our high-end business intelligence and automation tools.</p>
+            </a>
+        </div>
+
+        <div class="support">
+            <h2>Support Our Growth 🚀</h2>
+            <p>Help us continue building 9 paths of growth for the community.</p>
+            <a href="https://buymeacoffee.com/rameshmewalalvishwakarma" class="btn btn-coffee">☕ Buy Me a Coffee</a>
+            <a href="https://ko-fi.com/rameshmewalalvishwakarma" class="btn btn-kofi">🌹 Support on Ko-fi</a>
+            <a href="https://wa.me/919820806790" class="btn btn-wa">💬 WhatsApp Contact</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 RMV APEX GROUP | Managed by Ramesh Mewalal Vishwakarma 🚩</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/rmvapexgroups/">Facebook</a> |
+            <a href="https://www.youtube.com/@rmvapexgroup">YouTube</a> |
+            <a href="https://www.linkedin.com/company/rmvapexgroup/">LinkedIn</a> |
+            <a href="https://x.com/rmvapexgroup">X (Twitter)</a>
+        </div>
+        <p style="font-size: 10px; opacity: 0.6; margin-top: 20px;">Powered by Vercel & GitHub</p>
+    </footer>
+
+</body>
+</html>
