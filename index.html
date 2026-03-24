@@ -5,136 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMV VIRAL HUB | RMV APEX GROUP 🚩</title>
     <style>
-        :root { 
-            --primary: #0f172a; 
-            --accent: #f59e0b; 
-            --bg: #f8fafc; 
-            --card-bg: #ffffff;
-            --text: #1e293b;
-            --link-hover: #3b82f6;
-        }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
-        
-        /* Header Section */
-        .header { background: var(--primary); color: white; padding: 70px 20px; text-align: center; border-bottom: 8px solid var(--accent); }
-        .header h1 { font-size: 2.5rem; margin: 0; color: white; letter-spacing: 1px; }
-        .header p { font-size: 1.2rem; opacity: 0.9; margin-top: 15px; font-weight: 500; }
-
-        .container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
-        
-        /* Live Infrastructure Section - Enhanced */
-        .live-access {
-            background: #f0fdf4;
-            border: 2px solid #bbf7d0;
-            border-radius: 16px;
-            padding: 25px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .live-access h3 { color: #065f46; margin-top: 0; font-size: 1.3rem; display: flex; align-items: center; gap: 10px; }
-        .infra-link { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--primary); font-weight: 700; margin: 15px 0; transition: 0.3s; padding: 8px; border-radius: 8px; }
-        .infra-link:hover { background: white; color: var(--link-hover); transform: translateX(10px); }
-
-        /* Widget Cards */
-        .widget-card { 
-            background: var(--card-bg); 
-            border-radius: 16px; 
-            padding: 35px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
-            margin-bottom: 45px; 
-            border: 1px solid #e2e8f0; 
-            transition: 0.3s ease;
-        }
-        .widget-card h2 { color: var(--primary); margin-top: 0; font-size: 1.6rem; display: flex; align-items: center; gap: 12px; border-left: 5px solid var(--accent); padding-left: 15px; }
-        
-        .preview-box { background: #f1f5f9; border: 2px dashed #cbd5e1; padding: 25px; border-radius: 12px; margin: 20px 0; text-align: center; }
-        .code-label { font-weight: bold; color: var(--primary); margin-bottom: 10px; display: block; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        .code-snippet { background: #1e293b; color: #38bdf8; padding: 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85rem; overflow-x: auto; border: 1px solid #334155; }
-
-        /* Support Section */
-        .support-card { background: #fff; border: 2px solid var(--accent); border-radius: 20px; padding: 40px; text-align: center; margin-top: 60px; }
-        .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 25px; }
-        .btn { display: inline-flex; align-items: center; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; font-size: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .btn-coffee { background: #FFDD00; color: #000; }
-        .btn-kofi { background: #29abe0; color: #fff; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-
-        /* Footer */
-        .footer { background: var(--primary); color: white; text-align: center; padding: 60px 20px; margin-top: 80px; border-top: 8px solid var(--accent); }
-        .footer-text { font-size: 1.1rem; font-weight: 600; margin-bottom: 15px; }
-        .social-links { margin: 20px 0; font-size: 1rem; }
-        .social-links a { color: var(--accent); text-decoration: none; margin: 0 10px; font-weight: bold; transition: 0.3s; }
-        .social-links a:hover { color: white; text-decoration: underline; }
-        .footer-sub { font-size: 0.9rem; opacity: 0.7; margin-top: 20px; font-style: italic; }
+        :root { --primary: #0f172a; --accent: #f59e0b; --bg: #f8fafc; --text: #1e293b; --whatsapp: #25d366; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: var(--text); }
+        .header { background: var(--primary); color: white; padding: 60px 20px; text-align: center; border-bottom: 8px solid var(--accent); }
+        .about-btn { display: inline-block; background: var(--accent); color: var(--primary); padding: 12px 30px; border-radius: 50px; font-weight: 800; cursor: pointer; transition: 0.3s; margin-top: 20px; border: none; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .widget-card { background: white; border-radius: 16px; padding: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; margin-bottom: 30px; }
+        .code-snippet { background: #1e293b; color: #38bdf8; padding: 15px; border-radius: 8px; font-family: monospace; overflow-x: auto; font-size: 0.85rem; }
+        .float-wa { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background: var(--whatsapp); color: white; border-radius: 50px; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 100; }
+        /* Modal Style */
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+        .modal-content { background: white; margin: 10% auto; padding: 30px; border-radius: 15px; max-width: 600px; position: relative; border-top: 8px solid var(--accent); }
+        .footer { background: var(--primary); color: white; text-align: center; padding: 40px 20px; }
+        .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 20px 0; }
+        .social-grid a { color: #cbd5e1; text-decoration: none; font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.1); padding: 5px; border-radius: 4px; }
     </style>
 </head>
 <body>
-
     <div class="header">
-        <h1>🚀 RMV-Viral-Open</h1>
-        <p>Free Embeddable Widgets by RMV APEX GROUP 🚩</p>
+        <h1>🚀 RMV VIRAL HUB</h1>
+        <p>Embeddable Assets by RMV APEX GROUP 🚩</p>
+        <button class="about-btn" onclick="openAbout()">🚩 OUR MISSION (ABOUT US)</button>
     </div>
 
     <div class="container">
-        
-        <div class="live-access">
-            <h3>🌐 Official RMV Ecosystem</h3>
-            <p style="margin: 0 0 15px 0; font-size: 0.95rem; color: #166534; font-weight: 500;">Connect with our official hubs for the latest updates and advanced tools:</p>
-            
-            <a href="https://sites.google.com/view/rmvapexgroup" target="_blank" class="infra-link">
-                <span>🏢</span> <strong>Main Authority Hub:</strong> RMV APEX GROUP (Google Sites)
-            </a>
-            
-            <a href="https://rmvapexgroup.blogspot.com/" target="_blank" class="infra-link">
-                <span>📝</span> <strong>Official Blog:</strong> RMV Updates & Knowledge Base (Blogger)
-            </a>
-        </div>
-        
         <div class="widget-card">
             <h2>🚩 Official Branding Badge</h2>
-            <p>Help spread the mission by adding this live branding badge to your digital assets.</p>
-            <div class="preview-box">
-                <a href="https://sites.google.com/view/rmvapexgroup" target="_blank" style="background:#0f172a; color:#f59e0b; padding:12px 28px; border-radius:50px; text-decoration:none; font-weight:bold; border:2.5px solid #f59e0b; display: inline-block;">
-                    Powered by RMV APEX GROUP 🚩
-                </a>
-            </div>
-            <span class="code-label">Copy Embed Code:</span>
+            <p>Copy this code to add our mark to your site:</p>
             <div class="code-snippet">&lt;iframe src="https://rmv-viral-open.vercel.app/widgets/branding-badge.html" width="100%" height="100px" frameborder="0"&gt;&lt;/iframe&gt;</div>
         </div>
-
-        <div class="widget-card">
-            <h2>💰 Financial Micro-Widget</h2>
-            <p>A high-performance mini EMI calculator for your financial blog or platform.</p>
-            <div class="preview-box">
-                <p style="color: #94a3b8; font-style: italic;">[Interactive Widget Preview Loading via Vercel...]</p>
-            </div>
-            <span class="code-label">Copy Embed Code:</span>
-            <div class="code-snippet">&lt;iframe src="https://rmv-viral-open.vercel.app/widgets/mini-calc.html" width="100%" height="250px" frameborder="0"&gt;&lt;/iframe&gt;</div>
-        </div>
-
-        <div class="support-card">
-            <h2>❤️ Support the Mission</h2>
-            <p>Fuel our journey of building 9 paths of growth. Your contribution keeps our tools free and accessible!</p>
-            <div class="btn-group">
-                <a href="https://buymeacoffee.com/rameshmewalalvishwakarma" target="_blank" class="btn btn-coffee">☕ Buy Me a Coffee</a>
-                <a href="https://ko-fi.com/rameshmewalalvishwakarma" target="_blank" class="btn btn-kofi">🌹 Support on Ko-fi</a>
-            </div>
-        </div>
-
     </div>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span style="float:right; cursor:pointer; font-size:25px;" onclick="closeAbout()">&times;</span>
+            <h3>About RMV APEX GROUP 🚩</h3>
+            <p>Managed by <strong>Ramesh Mewalal Vishwakarma</strong>, we build financial tools and viral widgets for the digital community. Our mission is 100% transparency and growth.</p>
+            <a href="https://sites.google.com/view/rmvapexgroup" target="_blank" style="color:var(--accent); font-weight:bold;">Visit Official Google Site</a>
+        </div>
+    </div>
+
+    <a href="https://wa.me/918652025006" class="float-wa" target="_blank">WA</a>
 
     <div class="footer">
-        <div class="footer-text">© 2026 RMV APEX GROUP | Managed by Ramesh Mewalal Vishwakarma 🚩</div>
-        
-        <div class="social-links">
-            <a href="https://facebook.com/rameshmewalalvishwakarma" target="_blank">Facebook</a> | 
-            <a href="https://youtube.com/@rameshmewalalvishwakarma" target="_blank">YouTube</a> | 
-            <a href="https://linkedin.com/in/rameshmewalalvishwakarma" target="_blank">LinkedIn</a> | 
-            <a href="https://x.com/rameshmewalal" target="_blank">X (Twitter)</a>
+        <div class="social-grid">
+            <a href="https://www.facebook.com/rmvapexgroups/">Facebook</a>
+            <a href="https://www.youtube.com/@rmvapexgroup">YouTube</a>
+            <a href="https://www.linkedin.com/in/rmvapexgroup/">LinkedIn</a>
+            <a href="https://x.com/rmvapexgroup">X (Twitter)</a>
+            <a href="https://www.instagram.com/rmvapexgroups">Instagram</a>
+            <a href="https://wa.me/918652025006">WhatsApp</a>
         </div>
-
-        <div class="footer-sub">Driven by Intelligence. Powered by Community.</div>
+        <p>© 2026 RMV APEX GROUP | Ramesh Mewalal Vishwakarma 🚩</p>
     </div>
 
+    <script>
+        function openAbout() { document.getElementById("aboutModal").style.display = "block"; }
+        function closeAbout() { document.getElementById("aboutModal").style.display = "none"; }
+    </script>
 </body>
 </html>
