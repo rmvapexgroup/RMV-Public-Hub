@@ -3,85 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RMV APEX GROUP | Official Digital Hub 🚩</title>
+    <title>RMV Viral Hub | RMV APEX GROUP 🚩</title>
     <style>
-        :root { --primary: #1e293b; --accent: #f59e0b; --text: #f8fafc; --card-bg: #ffffff; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f1f5f9; color: #1e293b; }
+        :root { 
+            --primary: #0f172a; 
+            --accent: #f59e0b; 
+            --bg: #f8fafc; 
+            --card-bg: #ffffff;
+            --text: #1e293b;
+        }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
         
-        /* Hero Section */
-        .hero { background: var(--primary); color: white; padding: 80px 20px; text-align: center; border-bottom: 10px solid var(--accent); }
-        .hero h1 { font-size: 3rem; margin: 0; letter-spacing: 2px; }
-        .hero p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+        /* Header Section */
+        .header { background: var(--primary); color: white; padding: 70px 20px; text-align: center; border-bottom: 8px solid var(--accent); }
+        .header h1 { font-size: 2.5rem; margin: 0; color: white; letter-spacing: 1px; }
+        .header p { font-size: 1.2rem; opacity: 0.9; margin-top: 15px; font-weight: 500; }
 
-        /* Grid System */
-        .container { max-width: 1200px; margin: -50px auto 50px; padding: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-
-        /* Tool Cards */
-        .card { background: var(--card-bg); padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: 0.3s ease; text-decoration: none; color: inherit; border: 1px solid #e2e8f0; position: relative; overflow: hidden; }
-        .card:hover { transform: translateY(-10px); border-color: var(--accent); }
-        .card h3 { color: var(--primary); margin-top: 0; }
-        .card p { font-size: 0.9rem; color: #64748b; }
-        .badge { position: absolute; top: 10px; right: 10px; background: var(--accent); color: white; padding: 5px 10px; border-radius: 5px; font-size: 10px; font-weight: bold; }
+        .container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
+        
+        /* Widget Cards */
+        .widget-card { 
+            background: var(--card-bg); 
+            border-radius: 16px; 
+            padding: 35px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            margin-bottom: 45px; 
+            border: 1px solid #e2e8f0; 
+            transition: 0.3s ease;
+        }
+        .widget-card h2 { color: var(--primary); margin-top: 0; font-size: 1.6rem; display: flex; align-items: center; gap: 12px; }
+        
+        .preview-box { background: #f1f5f9; border: 2px dashed #cbd5e1; padding: 25px; border-radius: 12px; margin: 20px 0; text-align: center; }
+        .code-label { font-weight: bold; color: var(--primary); margin-bottom: 10px; display: block; font-size: 0.9rem; }
+        .code-snippet { background: #1e293b; color: #38bdf8; padding: 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85rem; overflow-x: auto; border: 1px solid #334155; }
 
         /* Support Section */
-        .support { text-align: center; padding: 40px; background: white; border-radius: 20px; margin-top: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .btn { display: inline-block; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin: 10px; transition: 0.3s; }
-        .btn-coffee { background: #FFDD00; color: black; }
-        .btn-kofi { background: #29abe0; color: white; }
-        .btn-wa { background: #25d366; color: white; }
+        .support-card { background: #fff; border: 2px solid var(--accent); border-radius: 20px; padding: 40px; text-align: center; margin-top: 60px; }
+        .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 25px; }
+        .btn { display: inline-flex; align-items: center; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; font-size: 1rem; }
+        .btn-coffee { background: #FFDD00; color: #000; }
+        .btn-kofi { background: #29abe0; color: #fff; }
 
-        footer { background: var(--primary); color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
-        .social-links a { color: var(--accent); margin: 0 10px; text-decoration: none; font-size: 14px; }
+        /* Footer */
+        .footer { background: var(--primary); color: white; text-align: center; padding: 60px 20px; margin-top: 80px; border-top: 5px solid var(--accent); }
+        .footer-text { font-size: 1.1rem; font-weight: 600; margin-bottom: 15px; }
+        .social-links { margin: 20px 0; font-size: 1rem; }
+        .social-links a { color: var(--accent); text-decoration: none; margin: 0 10px; font-weight: bold; transition: 0.3s; }
+        .social-links a:hover { color: white; }
+        .footer-sub { font-size: 0.9rem; opacity: 0.7; margin-top: 20px; font-style: italic; }
     </style>
 </head>
 <body>
 
-    <div class="hero">
-        <h1>RMV APEX GROUP 🚩</h1>
-        <p>Professional Financial, Tax, & Digital Utility Tools</p>
+    <div class="header">
+        <h1>🚀 RMV-Viral-Open</h1>
+        <p>Free Embeddable Widgets by RMV APEX GROUP 🚩</p>
     </div>
 
     <div class="container">
-        <div class="grid">
-            <a href="./yt-thumbnail/" class="card">
-                <span class="badge">POPULAR</span>
-                <h3>🎥 YT Thumbnail Downloader</h3>
-                <p>Download YouTube thumbnails in 4K, HD, and SD quality instantly.</p>
-            </a>
-
-            <a href="./emi-calculator/" class="card">
-                <span class="badge">FINANCE</span>
-                <h3>💰 Advanced EMI Calculator</h3>
-                <p>Calculate loans with interactive graphs and amortization schedules.</p>
-            </a>
-
-            <a href="https://rmvapexgroup.gumroad.com/" class="card">
-                <span class="badge">PRO</span>
-                <h3>🔐 Premium SaaS Vault</h3>
-                <p>Access our high-end business intelligence and automation tools.</p>
-            </a>
+        
+        <div class="widget-card">
+            <h2>🚩 Official Branding Badge</h2>
+            <p>Show your support for our mission by adding this badge to your website footer.</p>
+            <div class="preview-box">
+                <a href="https://rmv-public-hub.vercel.app/" target="_blank" style="background:#0f172a; color:#f59e0b; padding:10px 22px; border-radius:50px; text-decoration:none; font-weight:bold; border:2px solid #f59e0b; display: inline-block;">
+                    Powered by RMV APEX GROUP 🚩
+                </a>
+            </div>
+            <span class="code-label">Copy Embed Code:</span>
+            <div class="code-snippet">&lt;iframe src="https://rmv-viral-open.vercel.app/widgets/branding-badge.html" width="100%" height="100px" frameborder="0"&gt;&lt;/iframe&gt;</div>
         </div>
 
-        <div class="support">
-            <h2>Support Our Growth 🚀</h2>
-            <p>Help us continue building 9 paths of growth for the community.</p>
-            <a href="https://buymeacoffee.com/rameshmewalalvishwakarma" class="btn btn-coffee">☕ Buy Me a Coffee</a>
-            <a href="https://ko-fi.com/rameshmewalalvishwakarma" class="btn btn-kofi">🌹 Support on Ko-fi</a>
-            <a href="https://wa.me/919820806790" class="btn btn-wa">💬 WhatsApp Contact</a>
+        <div class="widget-card">
+            <h2>💰 Financial Micro-Widget</h2>
+            <p>A lightweight EMI calculator for your financial blog or website.</p>
+            <div class="preview-box">
+                <p style="color: #94a3b8; font-style: italic;">[Widget Preview Loading...]</p>
+            </div>
+            <span class="code-label">Copy Embed Code:</span>
+            <div class="code-snippet">&lt;iframe src="https://rmv-viral-open.vercel.app/widgets/mini-calc.html" width="100%" height="250px" frameborder="0"&gt;&lt;/iframe&gt;</div>
         </div>
+
+        <div class="support-card">
+            <h2>❤️ Support the Mission</h2>
+            <p>Help us build 9 paths of growth for the digital community. Your support keeps these tools open-source!</p>
+            <div class="btn-group">
+                <a href="https://buymeacoffee.com/rameshmewalalvishwakarma" target="_blank" class="btn btn-coffee">☕ Buy Me a Coffee</a>
+                <a href="https://ko-fi.com/rameshmewalalvishwakarma" target="_blank" class="btn btn-kofi">🌹 Support on Ko-fi</a>
+            </div>
+        </div>
+
     </div>
 
-    <footer>
-        <p>© 2026 RMV APEX GROUP | Managed by Ramesh Mewalal Vishwakarma 🚩</p>
+    <div class="footer">
+        <div class="footer-text">© 2026 RMV APEX GROUP | Managed by Ramesh Mewalal Vishwakarma 🚩</div>
+        
         <div class="social-links">
-            <a href="https://www.facebook.com/rmvapexgroups/">Facebook</a> |
-            <a href="https://www.youtube.com/@rmvapexgroup">YouTube</a> |
-            <a href="https://www.linkedin.com/company/rmvapexgroup/">LinkedIn</a> |
-            <a href="https://x.com/rmvapexgroup">X (Twitter)</a>
+            <a href="https://facebook.com/rameshmewalalvishwakarma" target="_blank">Facebook</a> | 
+            <a href="https://youtube.com/@rameshmewalalvishwakarma" target="_blank">YouTube</a> | 
+            <a href="https://linkedin.com/in/rameshmewalalvishwakarma" target="_blank">LinkedIn</a> | 
+            <a href="https://x.com/rameshmewalal" target="_blank">X (Twitter)</a>
         </div>
-        <p style="font-size: 10px; opacity: 0.6; margin-top: 20px;">Powered by Vercel & GitHub</p>
-    </footer>
+
+        <div class="footer-sub">Driven by Intelligence. Powered by Community.</div>
+    </div>
 
 </body>
 </html>
