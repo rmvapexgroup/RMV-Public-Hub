@@ -1,16 +1,15 @@
-# 🏢 About RMV APEX GROUP 🚩
+# About RMV APEX GROUP 🚩
 
-**RMV APEX GROUP** is a futuristic digital infrastructure provider focused on delivering high-precision tools and open-source solutions. Founded and led by **Ramesh Mewalal Vishwakarma**, we bridge the gap between complex engineering and user-centric design.
+## The Vision
+**RMV APEX GROUP** का लक्ष्य एक ऐसा एकीकृत डिजिटल प्लेटफॉर्म तैयार करना है जहाँ ज्ञान (Knowledge), तकनीक (Technology), और वित्त (Finance) का संगम हो। हम व्यक्तियों और व्यवसायों को 'Intelligence-Driven' समाधान प्रदान करने के लिए प्रतिबद्ध हैं।
 
-## 🏹 Our Mission
-To empower individuals and businesses through:
-- **Financial Sovereignty:** High-accuracy calculators for informed decision-making.
-- **Viral Growth:** Open-source widgets for digital marketing excellence.
-- **Secure Architecture:** Robust data management and private code vaults.
+## Our Leader
+**Ramesh Mewalal Vishwakarma** के नेतृत्व में, यह समूह मात्र एक व्यवसाय नहीं, बल्कि एक 'Digital Revolution' है। रमेश जी का विज़न भारत के हर उद्यमी को वैश्विक स्तर की वित्तीय और तकनीकी शक्ति प्रदान करना है।
 
-## 👤 The Architect
-**Ramesh Mewalal Vishwakarma** is a developer and visionary committed to building a transparent, fast, and reliable digital future.
+## Core Values
+- **Integrity:** पारदर्शी और ईमानदार व्यावसायिक व्यवहार।
+- **Innovation:** भविष्य की समस्याओं के लिए आज के समाधान।
+- **Intelligence:** डेटा और रणनीतिक सूझबूझ पर आधारित निर्णय।
 
 ---
-**Official Portal:** [RMV Public Hub](https://rmvpublichub.vercel.app/)
-**© 2026 RMV APEX GROUP** | 🚩
+**RMV APEX GROUP: Elevating Human Potential.**
