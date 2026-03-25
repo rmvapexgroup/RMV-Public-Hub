@@ -1,16 +1,19 @@
-# 🚀 RMV PUBLIC HUB | RMV APEX GROUP 🚩
+# 🏛️ RMV APEX GROUP | Master Showroom 🚩
 
-The **RMV PUBLIC HUB** is the central command center for all open-source assets and digital tools managed by **Ramesh Mewalal Vishwakarma**. 
+Welcome to the central gateway of the **RMV Digital Empire**, architected and managed by **Ramesh Mewalal Vishwakarma**. 
 
-## 🛡️ Key Features
-- **Integrated Architecture:** No external dependencies. Everything is built into a single high-performance file.
-- **WhatsApp Support:** Floating pop-up for real-time community engagement.
-- **Global Directory:** Access to 17+ RMV official platforms.
+## 🌐 The Four Pillars of RMV
+This hub connects our entire ecosystem:
+1. **[PUBLIC-HUB](https://rmv-public-hub.vercel.app/):** The Main Gateway & Social Network.
+2. **[VIRAL-OPEN](https://rmv-viral-open.vercel.app/):** Open-source Widgets & Marketing Tools.
+3. **[FIN-TOOLS](https://rmv-fin-tools.vercel.app/):** High-Precision Financial Engineering.
+4. **CORE-DATABASE:** Restricted Vault for Premium Algorithms. 🔐
 
-## 🛠️ Installation & Usage
-1. Upload `index.html` to your GitHub repository.
-2. Link your repository to **Vercel**.
-3. Your hub will be live at `https://your-project.vercel.app`.
+## 🛠️ Tech Stack
+- **Architecture:** Zero-Widget Minimalist Design.
+- **Support:** Integrated WhatsApp Support Pop-up (24/7).
+- **Hosting:** Globally deployed via Vercel.
 
 ---
-**© 2026 RMV APEX GROUP** | *Intelligence. Community. Growth.* 🚩
+**Founder:** Ramesh Mewalal Vishwakarma 🚩
+**© 2026 RMV APEX GROUP** | *Driven by Intelligence.*
