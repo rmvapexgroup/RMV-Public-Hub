@@ -65,7 +65,7 @@ For project inquiries, custom financial tool development, or technical support, 
 
 - **Founder:** Ramesh Mewalal Vishwakarma 🚩
 - **Direct WhatsApp:** [+91 8652025006](https://wa.me/918652025006)
-- **Email:** (Add your email here if needed)
+- **Email:** (rmvapexgroup@gmail.com)
 - **Vision:** Intelligence. Community. Growth.
 
 ---
