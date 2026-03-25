@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; padding: 15px; background: #f1f5f9; text-align: center; }
+        .calc-box { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        input { width: 80%; padding: 8px; margin: 5px 0; border: 1px solid #cbd5e1; border-radius: 5px; }
+        button { background: #0f172a; color: white; border: none; padding: 10px; width: 85%; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="calc-box">
+        <h3 style="margin:0 0 10px 0; color:#0f172a;">Quick EMI Calc</h3>
+        <input type="number" id="amt" placeholder="Loan Amount">
+        <input type="number" id="rate" placeholder="Interest Rate %">
+        <input type="number" id="time" placeholder="Months">
+        <button onclick="calc()">Calculate</button>
+        <p id="res" style="font-weight:bold; color:#f59e0b; margin-top:10px;"></p>
+    </div>
+    <script>
+        function calc(){
+            let p = document.getElementById('amt').value;
+            let r = document.getElementById('rate').value / 1200;
+            let n = document.getElementById('time').value;
+            let emi = Math.round(p * r * (Math.pow(1+r, n) / (Math.pow(1+r, n)-1)));
+            document.getElementById('res').innerText = "Monthly EMI: ₹" + (emi ? emi : 0);
+        }
+    </script>
+</body>
+</html>
