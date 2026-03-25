@@ -1,42 +1,58 @@
-# 🌐 RMV PUBLIC HUB | RMV APEX GROUP 🚩
+🏛️ RMV PUBLIC HUB | RMV APEX GROUP 🚩
 
-The central intelligence repository and deployment hub for **RMV APEX GROUP**, managed by **Ramesh Mewalal Vishwakarma**.
-
----
-
-## 🏗️ Our Ecosystem
-Access our official platforms for tools and knowledge:
-* 🏢 **Primary Hub:** [Google Sites Authority](https://sites.google.com/view/rmvapexgroup)
-* ⚡ **Knowledge Base:** [RMV Blogger Official](https://rmvapexgroup.blogspot.com/)
-* 💼 **Services:** [WCard Portfolio](https://ramesh27952.wcard.me/services)
-* 💬 **Support:** [Direct WhatsApp (+91 8652025006)](https://wa.me/918652025006)
+Welcome to the **Global Gateway** of the RMV ecosystem. Managed by **Ramesh Mewalal Vishwakarma**, this hub serves as the central directory for open-source assets, professional widgets, and community-driven technology.
 
 ---
 
-## 🛠️ Project Highlights
-- **Financial Tools:** High-precision EMI and Loan Checkers.
-- **Viral Assets:** Open-source widgets for web developers.
-- **9 Paths of Growth:** Strategic digital development for the community.
+## 🏢 Our Mission: The 9 Paths of Growth
+At **RMV APEX GROUP**, we believe in empowering individuals through digital literacy, financial intelligence, and seamless connectivity. This hub is built on the foundation of **Transparency, Innovation, and Growth.**
 
 ---
 
-## 📱 Global Social Network
-Connect with us on over 17+ platforms:
-[YouTube](https://www.youtube.com/@rmvapexgroup) | [LinkedIn](https://www.linkedin.com/in/rmvapexgroup/) | [Facebook](https://www.facebook.com/rmvapexgroups/) | [Instagram](https://www.instagram.com/rmvapexgroups) | [Substack](https://substack.com/@rmvapexgroup) | [Medium](https://medium.com/@rmvapexgroup) | [Reddit](https://www.reddit.com/u/rmvapexgroup/)
+## 🛠️ Public Asset Directory (Embeddable Widgets)
+
+You can integrate these professional tools into any platform (Blogger, WordPress, HTML Sites) using the official Vercel-hosted sources:
+
+### 🛡️ 1. Official Branding Badge
+*Establish authority with the RMV mark.*
+```html
+<iframe src="[https://rmv-viral-open.vercel.app/widgets/branding-badge.html](https://rmv-viral-open.vercel.app/widgets/branding-badge.html)" width="100%" height="100px" frameborder="0" scrolling="no"></iframe>
+```
+
+### 💰 2. Financial Mini-Calculator
+*Instant interest and loan calculations for your users.*
+```html
+<iframe src="[https://rmv-viral-open.vercel.app/widgets/mini-calc.html](https://rmv-viral-open.vercel.app/widgets/mini-calc.html)" width="100%" height="250px" frameborder="0" scrolling="no"></iframe>
+```
+
+### 📱 3. WhatsApp QR Connect
+*Modern Scan-to-Chat technology.*
+```html
+<iframe src="[https://rmv-viral-open.vercel.app/widgets/wa-qr.html](https://rmv-viral-open.vercel.app/widgets/wa-qr.html)" width="200px" height="250px" frameborder="0" scrolling="no"></iframe>
+```
 
 ---
-**© 2026 RMV APEX GROUP** | *Driven by Intelligence. Powered by Community.* 🚩
 
+## 🌐 Connect with the Empire (17+ Platforms)
 
-## ❤️ Support the Mission
-If our tools help you save time and money, consider supporting our journey toward building 9 paths of growth:
-- **☕ Buy Me a Coffee:** [Support Here](https://buymeacoffee.com/rameshmewalalvishwakarma)
-- **🌹 Support on Ko-fi:** [Donate Here](https://ko-fi.com/rameshmewalalvishwakarma)
-- **💖 Patreon:** [Join the Community](https://www.patreon.com/c/rmvapexgroup/)
+| Platform | Link |
+| :--- | :--- |
+| **Official Portal** | [RMV APEX GROUP](https://sites.google.com/view/rmvapexgroup) |
+| **YouTube** | [@rmvapexgroup](https://www.youtube.com/@rmvapexgroup) |
+| **LinkedIn** | [RMV Apex Group](https://www.linkedin.com/in/rmvapexgroup/) |
+| **Facebook** | [RMV Apex Groups](https://www.facebook.com/rmvapexgroups/) |
+| **WhatsApp** | [+91 8652025006](https://wa.me/918652025006) |
+| **Support Us** | [Buy Me a Coffee](https://buymeacoffee.com/rameshmewalalvishwakarma) |
 
 ---
 
-## 🔐 Licensing
-Most tools in this hub are released under the **MIT License**. For Premium Tools, please visit our private vault or Gumroad store for a commercial license.
+## 📞 Support & Collaboration
+For project inquiries, financial tool customization, or technical support, reach out directly to the founder:
 
-**© 2026 RMV APEX GROUP | Developed by Ramesh Mewalal Vishwakarma 🚩**
+- **Founder:** Ramesh Mewalal Vishwakarma 🚩
+- **Direct WhatsApp:** [+91 8652025006](https://wa.me/918652025006)
+- **Donations:** [Ko-fi Support](https://ko-fi.com/rameshmewalalvishwakarma)
+
+---
+
+**© 2026 RMV APEX GROUP** | *Driven by Purpose. Powered by Intelligence.* 🚩
