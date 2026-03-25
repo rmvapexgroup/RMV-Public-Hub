@@ -3,140 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RMV PUBLIC HUB | Digital Fortress 🚩</title>
+    <title>MASTER SHOWROOM | RMV APEX GROUP 🚩</title>
     <style>
         :root { 
-            --primary: #0f172a; 
-            --accent: #f59e0b; 
-            --bg: #f8fafc; 
-            --white: #ffffff; 
-            --whatsapp: #25d366;
-            --text: #334155;
+            --primary: #0f172a; --accent: #f59e0b; --bg: #020617; --card-bg: #1e293b; 
+            --white: #ffffff; --whatsapp: #25d366; --gold: #ffd700;
         }
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            margin: 0; background: var(--bg); color: var(--text); line-height: 1.8; 
-        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--white); margin: 0; line-height: 1.6; }
 
-        /* --- WHATSAPP FLOATING BUTTON (IN-BUILT) --- */
+        /* --- WHATSAPP FLOATING BUTTON --- */
         .wa-float {
             position: fixed; width: 65px; height: 65px; bottom: 30px; right: 30px;
-            background-color: var(--whatsapp); color: #FFF; border-radius: 50px;
-            text-align: center; font-size: 35px; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-            z-index: 999; display: flex; align-items: center; justify-content: center;
-            text-decoration: none; transition: 0.3s; border: 2px solid white;
+            background: var(--whatsapp); color: white; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 35px; box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+            z-index: 1000; text-decoration: none; border: 2px solid white; transition: 0.3s;
         }
-        .wa-float:hover { transform: scale(1.1) rotate(5deg); background-color: #128C7E; }
+        .wa-float:hover { transform: scale(1.1) rotate(15deg); }
 
-        /* --- LAYOUT & HEADER --- */
-        .header { 
-            background: var(--primary); color: white; padding: 100px 20px; 
-            text-align: center; border-bottom: 8px solid var(--accent); 
+        /* --- HERO SECTION --- */
+        .hero { 
+            padding: 120px 20px; text-align: center; 
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), 
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80');
+            background-size: cover; border-bottom: 5px solid var(--accent);
         }
-        .header h1 { font-size: 3.5rem; margin: 0; font-weight: 900; letter-spacing: -1px; }
-        .header p { font-size: 1.3rem; color: var(--accent); margin-top: 15px; font-weight: bold; font-style: italic; }
+        .hero h1 { font-size: 4rem; margin: 0; letter-spacing: -2px; color: var(--gold); }
+        .hero p { font-size: 1.5rem; color: #94a3b8; font-weight: 300; }
 
-        .container { max-width: 1000px; margin: -60px auto 60px; padding: 0 20px; }
+        .container { max-width: 1200px; margin: -50px auto 100px; padding: 0 20px; }
 
-        .card {
-            background: var(--white); padding: 45px; border-radius: 30px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.08); margin-bottom: 40px;
-            border: 1px solid #e2e8f0;
+        /* --- THE 4 PILLARS (GRID) --- */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .pillar-card { 
+            background: var(--card-bg); padding: 40px; border-radius: 25px; 
+            border: 1px solid rgba(245, 158, 11, 0.2); transition: 0.4s; text-align: center;
+            position: relative; overflow: hidden;
         }
+        .pillar-card:hover { transform: translateY(-10px); border-color: var(--accent); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .pillar-card h3 { font-size: 1.8rem; margin-bottom: 15px; color: var(--accent); }
+        .status-badge { position: absolute; top: 15px; right: 15px; padding: 5px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
+        .status-live { background: var(--whatsapp); color: white; }
+        .status-locked { background: #ef4444; color: white; }
 
-        h2 { color: var(--primary); border-left: 8px solid var(--accent); padding-left: 20px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.6rem; }
-        
-        .division-list { list-style: none; padding: 0; }
-        .division-list li { margin-bottom: 20px; padding: 20px; background: #f1f5f9; border-radius: 15px; border: 1px solid #e2e8f0; }
-        .division-list b { color: var(--primary); font-size: 1.1rem; display: block; margin-bottom: 5px; }
-
-        .quote-box { 
-            background: #fffbeb; border: 2px dashed var(--accent); 
-            padding: 30px; border-radius: 20px; margin: 40px 0; 
-            text-align: center; font-style: italic; color: #92400e; font-size: 1.2rem;
+        .btn { 
+            display: inline-block; padding: 12px 25px; background: var(--accent); 
+            color: var(--primary); text-decoration: none; border-radius: 10px; 
+            font-weight: 900; margin-top: 20px; transition: 0.3s;
         }
+        .btn:hover { background: var(--gold); transform: scale(1.05); }
 
-        /* --- NETWORK TABLE --- */
-        .table-wrapper { overflow-x: auto; margin-top: 25px; border-radius: 20px; border: 1px solid #e2e8f0; }
-        .social-table { width: 100%; border-collapse: collapse; min-width: 600px; background: white; }
-        .social-table th { background: var(--primary); color: white; padding: 20px; text-align: left; }
-        .social-table td { padding: 18px; border-bottom: 1px solid #f1f5f9; }
-        .social-table a { color: var(--primary); text-decoration: none; font-weight: 700; border-bottom: 2px solid var(--accent); transition: 0.2s; }
-        .social-table a:hover { color: var(--accent); }
+        /* --- SOCIAL HUB TABLE --- */
+        .social-card { background: var(--card-bg); margin-top: 60px; padding: 40px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1); }
+        .table-wrapper { overflow-x: auto; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th { background: rgba(255,255,255,0.05); color: var(--accent); padding: 15px; text-align: left; }
+        td { padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        table a { color: var(--white); text-decoration: none; border-bottom: 1px solid var(--accent); }
 
-        .footer { text-align: center; padding: 80px 20px; background: var(--primary); color: white; margin-top: 40px; }
-        .footer b { color: var(--accent); }
+        .footer { text-align: center; padding: 100px 20px; opacity: 0.6; font-size: 0.9rem; }
 
-        @media (max-width: 768px) { .header h1 { font-size: 2.2rem; } .card { padding: 30px; } .wa-float { width: 55px; height: 55px; bottom: 20px; right: 20px; } }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/918652025006" class="wa-float" target="_blank" title="Direct WhatsApp Support">
-        <span>💬</span>
-    </a>
+    <a href="https://wa.me/918652025006" class="wa-float" target="_blank"><span>💬</span></a>
 
-    <header class="header">
-        <h1>🏛️ RMV PUBLIC HUB 🚩</h1>
-        <p>The Central Command & Digital Fortress of RMV APEX GROUP</p>
-    </header>
+    <section class="hero">
+        <h1>RMV APEX GROUP</h1>
+        <p>Digital Sovereignty Engineered by <b>Ramesh Mewalal Vishwakarma</b> 🚩</p>
+    </section>
 
     <div class="container">
-        <div class="card">
-            <h2>🏢 Overview</h2>
-            <p>The <b>RMV PUBLIC HUB</b> is the supreme directory and open-source gateway managed by <b>Ramesh Mewalal Vishwakarma</b>. It serves as the unified location for high-precision documentation and global community support.</p>
-        </div>
+        
+        <div class="grid">
+            <div class="pillar-card">
+                <span class="status-badge status-live">Active Hub</span>
+                <h3>Public Hub</h3>
+                <p>The Gateway to the RMV Ecosystem and Social Connectivity.</p>
+                <a href="#" class="btn">ENTER HUB</a>
+            </div>
 
-        <div class="card">
-            <h2>🚀 Our Mission: Digital Empowerment</h2>
-            <ul class="division-list">
-                <li><b>🚀 1. RMV VIRAL HUB</b> Specialized marketing and branding asset factory for rapid growth.</li>
-                <li><b>💰 2. RMV-FIN-TOOLS</b> High-precision financial engineering engine for advanced tools.</li>
-                <li><b>📚 3. Public Resource Factory</b> An open repository of essential digital solutions.</li>
-            </ul>
-        </div>
+            <div class="pillar-card">
+                <span class="status-badge status-live">Live View</span>
+                <h3>Viral Open</h3>
+                <p>Open-source widgets and marketing tools for creators.</p>
+                <a href="https://rmv-viral-open.vercel.app/" class="btn">BROWSE TOOLS</a>
+            </div>
 
-        <div class="card">
-            <h2>👤 About the Founder</h2>
-            <div class="quote-box">
-                "We don't just build tools; we build the future of a digitally sovereign community." <br>
-                <b>— R. M. Vishwakarma 🚩</b>
+            <div class="pillar-card">
+                <span class="status-badge status-live">Live View</span>
+                <h3>Fin-Tools</h3>
+                <p>High-precision financial calculators and engineering models.</p>
+                <a href="https://rmv-fin-tools.vercel.app/" class="btn">CALCULATE NOW</a>
+            </div>
+
+            <div class="pillar-card" style="opacity: 0.8; background: #0f172a;">
+                <span class="status-badge status-locked">Restricted</span>
+                <h3>Core Database</h3>
+                <p>Private vault containing premium algorithms and secure data.</p>
+                <a href="https://wa.me/918652025006" class="btn" style="background: #334155; color: white;">REQUEST ACCESS</a>
             </div>
         </div>
 
-        <div class="card">
-            <h2>🌐 Global Connectivity</h2>
+        <div class="social-card">
+            <h2 style="color: var(--accent); text-align: center;">🌐 Global Connectivity Network</h2>
             <div class="table-wrapper">
-                <table class="social-table">
+                <table>
                     <thead>
-                        <tr><th>Platform</th><th>Official Link</th><th>Platform</th><th>Official Link</th></tr>
+                        <tr><th>Platform</th><th>Official Channel</th><th>Platform</th><th>Official Channel</th></tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><b>Primary Hub</b></td><td><a href="https://sites.google.com/view/rmvapexgroup" target="_blank">RMV APEX Portal</a></td>
-                            <td><b>WhatsApp</b></td><td><a href="https://wa.me/918652025006" target="_blank">Direct Support</a></td>
+                            <td><b>YouTube</b></td><td><a href="https://www.youtube.com/@rmvapexgroup">Watch Wisdom</a></td>
+                            <td><b>LinkedIn</b></td><td><a href="https://www.linkedin.com/in/rmvapexgroup/">Professional</a></td>
                         </tr>
                         <tr>
-                            <td><b>YouTube</b></td><td><a href="https://www.youtube.com/@rmvapexgroup" target="_blank">Video Wisdom</a></td>
-                            <td><b>LinkedIn</b></td><td><a href="https://www.linkedin.com/in/rmvapexgroup/" target="_blank">Professional Net</a></td>
+                            <td><b>Instagram</b></td><td><a href="https://www.instagram.com/rmvapexgroups">Updates</a></td>
+                            <td><b>Facebook</b></td><td><a href="https://www.facebook.com/rmvapexgroups/">Community</a></td>
                         </tr>
                         <tr>
-                            <td><b>Instagram</b></td><td><a href="https://www.instagram.com/rmvapexgroups" target="_blank">Social Updates</a></td>
-                            <td><b>Facebook</b></td><td><a href="https://www.facebook.com/rmvapexgroups/" target="_blank">Community</a></td>
+                            <td><b>Blogger</b></td><td><a href="https://rmvapexgroup.blogspot.com/">Official Blog</a></td>
+                            <td><b>X (Twitter)</b></td><td><a href="https://x.com/rmvapexgroup">Latest Feed</a></td>
                         </tr>
                         <tr>
-                            <td><b>Buy Me Coffee</b></td><td><a href="https://buymeacoffee.com/rameshmewalalvishwakarma" target="_blank">Support</a></td>
-                            <td><b>Ko-fi</b></td><td><a href="https://ko-fi.com/rameshmewalalvishwakarma" target="_blank">Donate Hub</a></td>
+                            <td><b>Buy Me Coffee</b></td><td><a href="https://buymeacoffee.com/rameshmewalalvishwakarma">Support</a></td>
+                            <td><b>Ko-fi</b></td><td><a href="https://ko-fi.com/rameshmewalalvishwakarma">Donate</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+
     </div>
 
     <footer class="footer">
-        <p><b>RMV APEX GROUP 🚩</b></p>
-        <p>© 2026 | Driven by Intelligence. Bound by Community.</p>
+        <p><b>ARCHITECT: RAMESH MEWALAL VISHWAKARMA 🚩</b></p>
+        <p>© 2026 RMV APEX GROUP | Built for the Future.</p>
     </footer>
 
 </body>
