@@ -1,22 +1,25 @@
-# 🚩 RMV APEX GROUP - Digital Ecosystem
-### Managed, Engineered & Founded by **Ramesh Mewalal Vishwakarma**
+# 🚩 RMV APEX GROUP - Public Hub
 
-Welcome to the official repository of **RMV APEX GROUP**. This is a multi-dimensional digital powerhouse architected to bridge the gap between financial intelligence, digital automation, and global trade.
+Welcome to the **Official Master Gateway** of RMV APEX GROUP. This is the central architectural hub managed, engineered, and founded by **Ramesh Mewalal Vishwakarma**.
 
-## 🏛️ The 4 Pillars of RMV Empire
-1. **RMV Public Hub:** The main gateway to our 18 business verticals.
-2. **Fin-Tools:** High-precision engineering tools for financial & tax calculations.
-3. **Viral Open:** Open-source widgets designed for strategic digital growth.
-4. **Core Vault:** Encrypted repository for premium assets and private data.
+## 🌐 Vision
+Architecting a wealthy future through innovation, digital strategy, and high-performance engineering tools. Our goal is to provide a unified ecosystem for Financial Tools, Viral Marketing, and Global E-commerce.
 
-## 📊 18 Business Categories
-Our ecosystem spans across 18 specialized sectors including **Capital Markets, AI & Automation, International Trade, Real Estate Finance, and Business Compliance (GST/Income Tax).**
+## 🚀 Ecosystem Structure
+- **[Public Hub](https://rmvpublichub.vercel.app/)**: The main entrance to all business verticals.
+- **[Shopping Mall](./shop.html)**: A curated collection of premium digital and physical products.
+- **[Fin-Tools](https://rmvfintools.vercel.app/)**: Advanced financial engineering calculators.
+- **[Viral Open](https://rmv-viral-opens.vercel.app/)**: Open-source marketing and growth engines.
 
-## 🌐 Connectivity Network
-- **Official Portal:** [RMV Public Hub](https://rmvpublichub.vercel.app/)
-- **WhatsApp Support:** [+91 8652025006](https://wa.me/918652025006)
-- **LinkedIn:** [RMV Apex Group](https://www.linkedin.com/in/rmvapexgroup/)
-- **YouTube:** [@rmvapexgroup](https://www.youtube.com/@rmvapexgroup)
+## 🛠️ Technology Stack
+- **Frontend**: HTML5, CSS3 (Modern UI/UX Custom Engineering)
+- **Architecture**: Distributed Repository System via GitHub & Vercel
+- **Integration**: Professional Affiliate Engine & Social Connectivity Grid
+
+## 📬 Contact & Connectivity
+- **Founder**: Ramesh Mewalal Vishwakarma
+- **WhatsApp**: [+91 8652025006](https://wa.me/918652025006)
+- **Official Website**: [RMV APEX GROUP](https://rmvpublichub.vercel.app/)
 
 ---
-*"Architecting a Wealthy Future through Innovation & Strategy."*
+*Built with precision. Engineered for Growth. Managed with Integrity.* 🚩
