@@ -35,8 +35,8 @@
 
         .container { max-width: 1300px; margin: -80px auto 100px; padding: 0 25px; }
 
-        /* --- THE 4 PILLARS --- */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        /* --- THE 3 MAIN PILLARS (RE-ARRANGED) --- */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
         .pillar-card { 
             background: var(--card-bg); padding: 50px 30px; border-radius: 35px; 
             border: 1px solid rgba(245, 158, 11, 0.15); text-align: center;
@@ -47,7 +47,6 @@
         .pillar-card h3 { font-size: 2.2rem; margin-bottom: 15px; color: var(--accent); font-weight: 800; }
         .status-badge { position: absolute; top: 25px; right: 25px; padding: 7px 15px; border-radius: 25px; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; }
         .status-live { background: var(--whatsapp); color: white; box-shadow: 0 0 15px rgba(37,211,102,0.4); }
-        .status-locked { background: #ef4444; color: white; }
 
         .btn-group { display: flex; flex-direction: column; gap: 12px; margin-top: 25px; }
         .btn { 
@@ -59,135 +58,107 @@
         .btn-outline { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
         .btn-outline:hover { background: var(--accent); color: var(--primary); }
 
-        /* --- UPDATED REVENUE HUB SECTION --- */
+        /* --- GLOBAL REVENUE HUB SECTION (CLEAN & PROFESSIONAL) --- */
         .affiliate-section { 
             margin-top: 100px; padding: 70px 40px; background: linear-gradient(145deg, #1e293b, #020617); 
             border-radius: 50px; border: 1px solid rgba(255, 215, 0, 0.25); text-align: center;
             box-shadow: 0 25px 50px rgba(0,0,0,0.5);
         }
         .affiliate-header h2 { color: var(--gold); font-size: 3rem; margin-bottom: 15px; text-transform: uppercase; font-weight: 900; }
-        .affiliate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; margin-top: 50px; }
+        .affiliate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
         .affiliate-card { 
             background: rgba(255,255,255,0.02); padding: 40px 30px; border-radius: 30px; 
             border: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: space-between;
             position: relative;
         }
-        .affiliate-card:hover { transform: translateY(-10px) scale(1.02); border-color: var(--gold); background: rgba(255,255,255,0.06); }
+        .affiliate-card:hover { transform: translateY(-10px); border-color: var(--gold); background: rgba(255,255,255,0.06); }
         .affiliate-card h4 { color: var(--gold); margin-bottom: 15px; font-size: 1.6rem; font-weight: 800; }
-        .affiliate-card p { font-size: 0.95rem; color: #cbd5e1; margin-bottom: 30px; line-height: 1.6; }
+        .affiliate-card p { font-size: 0.95rem; color: #cbd5e1; margin-bottom: 30px; }
 
-        /* --- SOCIAL NETWORK HUB --- */
+        /* --- SOCIAL NETWORK HUB (UNIFIED & PROFESSIONAL) --- */
         .social-card { background: var(--card-bg); margin-top: 100px; padding: 60px 40px; border-radius: 45px; border: 1px solid rgba(255,255,255,0.05); }
         .social-card h2 { color: var(--accent); text-align: center; font-size: 2.8rem; margin-bottom: 40px; font-weight: 900; }
         .table-wrapper { overflow-x: auto; border-radius: 20px; background: rgba(0,0,0,0.2); }
         table { width: 100%; border-collapse: collapse; min-width: 700px; }
         th { background: rgba(255,255,255,0.04); color: var(--accent); padding: 25px; text-align: left; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; }
         td { padding: 25px; border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 1.1rem; }
-        table a { color: var(--white); text-decoration: none; font-weight: 700; display: inline-block; padding: 5px 0; border-bottom: 2px solid transparent; }
-        table a:hover { color: var(--accent); border-bottom: 2px solid var(--accent); }
+        table a { color: var(--white); text-decoration: none; font-weight: 700; }
+        table a:hover { color: var(--accent); }
 
         .footer { text-align: center; padding: 120px 20px; background: #010409; border-top: 1px solid rgba(255,255,255,0.08); margin-top: 100px; }
         .footer-brand { color: var(--gold); font-weight: 900; font-size: 1.8rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px; }
-        .footer p { opacity: 0.6; font-size: 1rem; max-width: 600px; margin: 10px auto; }
 
-        @media (max-width: 768px) { 
-            .hero h1 { font-size: 3rem; } 
-            .hero p { font-size: 1.2rem; }
-            .grid { grid-template-columns: 1fr; }
-            .affiliate-header h2 { font-size: 2rem; }
-        }
+        @media (max-width: 768px) { .hero h1 { font-size: 3rem; } .grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/918652025006" class="wa-float" target="_blank" title="Connect with Ramesh">
+    <a href="https://wa.me/918652025006" class="wa-float" target="_blank">
         <span>💬</span>
     </a>
 
     <section class="hero">
         <h1>RMV APEX GROUP</h1>
-        <p>Managed, Engineered & Founded by <br><b>Ramesh Mewalal Vishwakarma</b> 🚩</p>
+        <p>Strategic Architecture & Digital Governance <br>By <b>Ramesh Mewalal Vishwakarma</b> 🚩</p>
     </section>
 
     <div class="container">
         
         <div class="grid">
             <div class="pillar-card" style="border: 3px solid var(--gold);">
-                <span class="status-badge status-live">Primary Portal</span>
+                <span class="status-badge status-live">Primary Hub</span>
                 <h3>Public Hub</h3>
-                <p>यह तुम्हारे साम्राज्य का 'Main Gate' है। यहाँ पूरी दुनिया तुम्हारे 18 बिजनेस वर्टिकल्स को देखती है।</p>
+                <p>आपका मुख्य व्यापारिक प्रवेश द्वार जहाँ 18 श्रेणियां और वैश्विक सेवाएँ उपलब्ध हैं।</p>
                 <div class="btn-group">
-                    <a href="https://rmvpublichub.vercel.app/" class="btn">PORTAL (VERCEL)</a>
-                    <a href="https://rmvapexgroup.github.io/RMV-Public-Hub/" class="btn btn-outline">PORTAL (GITHUB)</a>
-                </div>
-            </div>
-
-            <div class="pillar-card">
-                <span class="status-badge status-live">Live Now</span>
-                <h3>Viral Open</h3>
-                <p>ओपन-सोर्स मार्केटिंग विजेट्स का खजाना। यहाँ से हम 'Viral Growth' को नियंत्रित करते हैं।</p>
-                <div class="btn-group">
-                    <a href="https://rmv-viral-opens.vercel.app/" class="btn">ACCESS VERCEL</a>
-                    <a href="https://rmvapexgroup.github.io/RMV-Viral-Open/" class="btn btn-outline">ACCESS GITHUB</a>
+                    <a href="https://rmvpublichub.vercel.app/" class="btn">VERCEL PORTAL</a>
+                    <a href="https://rmvapexgroup.github.io/RMV-Public-Hub/" class="btn btn-outline">GITHUB SOURCE</a>
                 </div>
             </div>
 
             <div class="pillar-card">
                 <span class="status-badge status-live">Active</span>
                 <h3>Fin-Tools</h3>
-                <p>सटीक वित्तीय गणनाओं के लिए प्रोफेशनल इंजीनियरिंग टूल्स। यह 'Wealth Intelligence' का केंद्र है।</p>
+                <p>उच्च-स्तरीय इंजीनियरिंग वित्तीय कैलकुलेटर और रणनीतिक धन प्रबंधन उपकरण।</p>
                 <div class="btn-group">
-                    <a href="https://rmvfintools.vercel.app/" class="btn">TOOLS (VERCEL)</a>
-                    <a href="https://rmvapexgroup.github.io/RMV-FIN-TOOLS/" class="btn btn-outline">TOOLS (GITHUB)</a>
+                    <a href="https://rmvfintools.vercel.app/" class="btn">LAUNCH TOOLS</a>
+                    <a href="https://rmvapexgroup.github.io/RMV-FIN-TOOLS/" class="btn btn-outline">GITHUB REPO</a>
                 </div>
             </div>
 
-            <div class="pillar-card" style="background: linear-gradient(145deg, #1e293b, #020617);">
-                <span class="status-badge status-locked">Encrypted</span>
-                <h3>Core Vault</h3>
-                <p>प्रीमियम कोड, प्राइवेट डेटा और रणनीतियों की गुप्त तिजोरी। केवल अधिकृत सदस्यों के लिए।</p>
+            <div class="pillar-card">
+                <span class="status-badge status-live">Live</span>
+                <h3>Viral Open</h3>
+                <p>मार्केटिंग विजेट्स और ओपन-सोर्स ग्रोथ टूल्स का रणनीतिक संग्रह।</p>
                 <div class="btn-group">
-                    <a href="https://wa.me/918652025006" class="btn" style="background: #334155; color: white;">REQUEST ACCESS</a>
-                    <a href="https://github.com/rmvapexgroup/RMV-CORE-DATABASE" class="btn btn-outline" style="border-color: #334155; color: #94a3b8;">PRIVATE REPO</a>
+                    <a href="https://rmv-viral-opens.vercel.app/" class="btn">ACCESS WIDGETS</a>
+                    <a href="https://rmvapexgroup.github.io/RMV-Viral-Open/" class="btn btn-outline">DEVELOPER VIEW</a>
                 </div>
             </div>
         </div>
 
         <div class="affiliate-section">
             <div class="affiliate-header">
-                <h2>🛒 RMV GLOBAL REVENUE HUB</h2>
-                <p style="color: #94a3b8; max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
-                    RMV APEX GROUP द्वारा प्रमाणित दुनिया के सर्वश्रेष्ठ डिजिटल और फिजिकल प्रोडक्ट्स।
-                </p>
+                <h2>💰 GLOBAL REVENUE HUB</h2>
+                <p style="color: #94a3b8;">Certified Professional Services & Premium Digital Assets</p>
             </div>
             
             <div class="affiliate-grid">
                 <div class="affiliate-card">
-                    <span class="status-badge status-live" style="background: #e11d48;">Health & Brain</span>
-                    <h4>Digistore Solutions</h4>
-                    <p>Advanced Amino, Memory Breakthroughs, and Intelligence tools for peak performance.</p>
-                    <a href="https://www.advancedbionutritionals.com/DS24/Advanced-Amino/Muscle-Mass-Loss/HD.htm#aff=poleb22" class="btn" target="_blank">EXPLORE DEALS</a>
+                    <h4>Instamojo Profile</h4>
+                    <p>Professional consulting, financial services, and secure legal transactions.</p>
+                    <a href="https://rmvapexgroup.myinstamojo.com/" class="btn" target="_blank">VISIT MOJO STORE</a>
                 </div>
 
                 <div class="affiliate-card">
-                    <span class="status-badge status-live" style="background: #2563eb;">Wealth Tech</span>
-                    <h4>ClickBank Masterclass</h4>
-                    <p>High-ticket financial systems, wealth education and digital automation tools.</p>
+                    <h4>Super Profile</h4>
+                    <p>Universal access point for all digital assets, courses, and professional links.</p>
+                    <a href="https://superprofile.bio/rmvapexgroup" class="btn" target="_blank">OPEN SUPER PROFILE</a>
+                </div>
+
+                <div class="affiliate-card">
+                    <h4>Wealth Masterclass</h4>
+                    <p>Exclusive high-ticket financial intelligence and automation systems.</p>
                     <a href="https://e168bjvinntmdt84ssym245jq2.hop.clickbank.net" class="btn" target="_blank">GET ACCESS</a>
-                </div>
-
-                <div class="affiliate-card">
-                    <span class="status-badge status-live" style="background: #f59e0b; color: #000;">RMV's Tech Picks</span>
-                    <h4>Amazon Essentials</h4>
-                    <p>Developer hardware, premium gear, and business books handpicked by RMV.</p>
-                    <a href="https://amzn.to/4lTZ0fl" class="btn" target="_blank">SHOP ON AMAZON</a>
-                </div>
-
-                <div class="affiliate-card">
-                    <span class="status-badge status-live" style="background: #10b981;">Premium Assets</span>
-                    <h4>RMV Shopping Mall</h4>
-                    <p>Puma Sportswear, LowPoly Graphics Courses, and Market Metrics Analysis.</p>
-                    <a href="shop.html" class="btn" style="background: var(--gold); color: black;">ENTER SHOPPING MALL</a>
                 </div>
             </div>
         </div>
@@ -197,24 +168,28 @@
             <div class="table-wrapper">
                 <table>
                     <thead>
-                        <tr><th>CHANNEL</th><th>DIRECT ACCESS</th><th>CHANNEL</th><th>DIRECT ACCESS</th></tr>
+                        <tr><th>PLATFORM</th><th>ACCESS LINK</th><th>NETWORK</th><th>ACCESS LINK</th></tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><b>Official Portal</b></td><td><a href="https://rmvpublichub.vercel.app/" target="_blank">Launch Site</a></td>
-                            <td><b>WhatsApp</b></td><td><a href="https://wa.me/918652025006" target="_blank">Direct Founder</a></td>
+                            <td><b>WhatsApp Channel</b></td><td><a href="https://wa.me/918652025006" target="_blank">Connect Now</a></td>
+                            <td><b>LinkedIn Professional</b></td><td><a href="https://www.linkedin.com/in/rmvapexgroup/" target="_blank">View Network</a></td>
                         </tr>
                         <tr>
-                            <td><b>YouTube</b></td><td><a href="https://www.youtube.com/@rmvapexgroup" target="_blank">Subscribe Hub</a></td>
-                            <td><b>LinkedIn</b></td><td><a href="https://www.linkedin.com/in/rmvapexgroup/" target="_blank">Network Connect</a></td>
+                            <td><b>Facebook Global</b></td><td><a href="https://www.facebook.com/rmvapexgroups/" target="_blank">Join Community</a></td>
+                            <td><b>Messenger Desk</b></td><td><a href="https://m.me/rmvapexgroups" target="_blank">Chat Support</a></td>
                         </tr>
                         <tr>
-                            <td><b>Instagram</b></td><td><a href="https://www.instagram.com/rmvapexgroups" target="_blank">Follow Daily</a></td>
-                            <td><b>Blogger</b></td><td><a href="https://rmvapexgroup.blogspot.com/" target="_blank">Read Insights</a></td>
+                            <td><b>YouTube Authority</b></td><td><a href="https://www.youtube.com/@rmvapexgroup" target="_blank">Subscribe</a></td>
+                            <td><b>Telegram Official</b></td><td><a href="https://t.me/RMVApexGroupPublicChannel" target="_blank">Join Channel</a></td>
                         </tr>
                         <tr>
-                            <td><b>GitHub</b></td><td><a href="https://github.com/rmvapexgroup" target="_blank">Source Code</a></td>
-                            <td><b>X (Twitter)</b></td><td><a href="https://x.com/rmvapexgroup" target="_blank">Quick Updates</a></td>
+                            <td><b>Blogger Insights</b></td><td><a href="https://rmvapexgroup.blogspot.com/" target="_blank">Read Blog</a></td>
+                            <td><b>X (Twitter) Feed</b></td><td><a href="https://x.com/rmvapexgroup" target="_blank">Follow Updates</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>GitHub Intelligence</b></td><td><a href="https://github.com/rmvapexgroup" target="_blank">Open Source</a></td>
+                            <td><b>Threads Network</b></td><td><a href="https://www.threads.com/@rmvapexgroups" target="_blank">Connect Daily</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -226,7 +201,7 @@
     <footer class="footer">
         <div class="footer-brand">RMV APEX GROUP 🚩</div>
         <p>© 2026 | All Rights Reserved. <br><b>Ramesh Mewalal Vishwakarma</b></p>
-        <p style="font-size: 0.85rem; letter-spacing: 1px; color: var(--accent);">Architecting a Wealthy Future through Innovation & Strategy.</p>
+        <p style="color: var(--accent); font-weight: bold;">Strategic Innovation • Professional Integrity • Global Growth</p>
     </footer>
 
 </body>
