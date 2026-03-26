@@ -13,7 +13,6 @@
         * { box-sizing: border-box; transition: all 0.3s ease; }
         body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--white); margin: 0; line-height: 1.6; overflow-x: hidden; }
 
-        /* --- WHATSAPP FLOATING BUTTON --- */
         .wa-float {
             position: fixed; width: 65px; height: 65px; bottom: 30px; right: 30px;
             background: var(--whatsapp); color: white; border-radius: 50%;
@@ -21,184 +20,168 @@
             font-size: 35px; box-shadow: 0 10px 30px rgba(37,211,102,0.5);
             z-index: 1000; text-decoration: none; border: 2px solid white;
         }
-        .wa-float:hover { transform: scale(1.1) rotate(15deg); filter: brightness(1.1); }
 
-        /* --- HERO SECTION --- */
         .hero { 
-            padding: 160px 20px; text-align: center; 
+            padding: 150px 20px; text-align: center; 
             background: radial-gradient(circle at center, rgba(15, 23, 42, 0.8) 0%, rgba(2, 6, 23, 1) 100%), 
-                        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80');
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072');
             background-size: cover; background-attachment: fixed; border-bottom: 5px solid var(--accent);
         }
-        .hero h1 { font-size: 5rem; margin: 0; letter-spacing: -3px; color: var(--gold); text-shadow: 0 0 30px rgba(255, 215, 0, 0.4); text-transform: uppercase; }
-        .hero p { font-size: 1.8rem; color: #94a3b8; font-weight: 300; margin-top: 15px; letter-spacing: 1px; }
+        .hero h1 { font-size: 4.8rem; margin: 0; color: var(--gold); text-transform: uppercase; letter-spacing: -2px; text-shadow: 0 0 20px rgba(255,215,0,0.3); }
+        .hero p { font-size: 1.6rem; color: #94a3b8; margin-top: 15px; font-weight: 300; }
 
-        .container { max-width: 1300px; margin: -80px auto 100px; padding: 0 25px; }
+        .container { max-width: 1300px; margin: -70px auto 100px; padding: 0 25px; }
 
-        /* --- THE 3 SUPREME PILLARS --- */
+        /* THE PRIMARY PILLARS */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
         .pillar-card { 
             background: var(--card-bg); padding: 50px 30px; border-radius: 35px; 
             border: 1px solid rgba(245, 158, 11, 0.15); text-align: center;
-            position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
         }
-        .pillar-card:hover { transform: translateY(-15px); border-color: var(--accent); box-shadow: 0 30px 60px rgba(0,0,0,0.6); background: #243147; }
-        .pillar-card h3 { font-size: 2.2rem; margin-bottom: 15px; color: var(--accent); font-weight: 800; }
-        .status-badge { position: absolute; top: 25px; right: 25px; padding: 7px 15px; border-radius: 25px; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; }
-        .status-live { background: var(--whatsapp); color: white; box-shadow: 0 0 15px rgba(37,211,102,0.4); }
-
-        .btn-group { display: flex; flex-direction: column; gap: 12px; margin-top: 25px; }
+        .pillar-card h3 { font-size: 2rem; color: var(--accent); margin-bottom: 15px; font-weight: 800; }
         .btn { 
-            display: inline-block; padding: 15px 25px; background: var(--accent); 
-            color: var(--primary); text-decoration: none; border-radius: 15px; 
-            font-weight: 900; font-size: 0.95rem; text-align: center; letter-spacing: 0.5px;
+            display: block; padding: 15px; background: var(--accent); color: var(--primary); 
+            text-decoration: none; border-radius: 15px; font-weight: 900; margin-top: 12px;
         }
-        .btn:hover { background: var(--gold); transform: scale(1.03); box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4); }
         .btn-outline { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
-        .btn-outline:hover { background: var(--accent); color: var(--primary); }
+        .btn:hover { transform: scale(1.03); filter: brightness(1.1); }
 
-        /* --- REVENUE GLOBAL HUB --- */
-        .affiliate-section { 
+        /* REVENUE GLOBAL HUB (REINFORCED WITH AMAZON) */
+        .revenue-section { 
             margin-top: 100px; padding: 70px 40px; background: linear-gradient(145deg, #1e293b, #020617); 
-            border-radius: 50px; border: 1px solid rgba(255, 215, 0, 0.25); text-align: center;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            border-radius: 50px; border: 1px solid var(--gold); text-align: center;
         }
-        .affiliate-header h2 { color: var(--gold); font-size: 3rem; margin-bottom: 15px; text-transform: uppercase; font-weight: 900; }
-        .affiliate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
-        .affiliate-card { 
-            background: rgba(255,255,255,0.02); padding: 40px 30px; border-radius: 30px; 
-            border: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: space-between;
-        }
-        .affiliate-card:hover { transform: translateY(-10px); border-color: var(--gold); background: rgba(255,255,255,0.06); }
-        .affiliate-card h4 { color: var(--gold); margin-bottom: 15px; font-size: 1.6rem; font-weight: 800; }
-        .affiliate-card p { font-size: 0.95rem; color: #cbd5e1; margin-bottom: 30px; line-height: 1.6; }
+        .rev-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; margin-top: 50px; }
+        .rev-card { background: rgba(255,255,255,0.03); padding: 35px 25px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08); }
+        .rev-card:hover { border-color: var(--gold); background: rgba(255,255,255,0.06); }
+        .rev-card h4 { color: var(--gold); font-size: 1.5rem; margin-bottom: 12px; font-weight: 800; }
+        .rev-card p { font-size: 0.95rem; color: #cbd5e1; margin-bottom: 25px; }
 
-        /* --- SOCIAL NETWORK HUB --- */
-        .social-card { background: var(--card-bg); margin-top: 100px; padding: 60px 40px; border-radius: 45px; border: 1px solid rgba(255,255,255,0.05); }
-        .social-card h2 { color: var(--accent); text-align: center; font-size: 2.8rem; margin-bottom: 40px; font-weight: 900; }
-        .table-wrapper { overflow-x: auto; border-radius: 20px; background: rgba(0,0,0,0.2); }
-        table { width: 100%; border-collapse: collapse; min-width: 700px; }
-        th { background: rgba(255,255,255,0.04); color: var(--accent); padding: 25px; text-align: left; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; }
-        td { padding: 25px; border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 1.1rem; }
-        table a { color: var(--white); text-decoration: none; font-weight: 700; display: inline-block; padding: 5px 0; border-bottom: 2px solid transparent; }
-        table a:hover { color: var(--accent); border-bottom: 2px solid var(--accent); }
+        /* GLOBAL CONNECTIVITY Matrix */
+        .social-section { margin-top: 100px; }
+        .social-section h2 { text-align: center; color: var(--gold); font-size: 3rem; margin-bottom: 40px; font-weight: 900; }
+        .table-wrapper { background: var(--card-bg); border-radius: 35px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th { background: rgba(255,255,255,0.04); color: var(--accent); padding: 25px; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; }
+        td { padding: 22px 25px; border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 1.1rem; }
+        td b { color: var(--white); font-weight: 700; }
+        td a { color: var(--accent); text-decoration: none; font-weight: 800; border: 1px solid var(--accent); padding: 6px 15px; border-radius: 10px; font-size: 0.9rem; }
+        td a:hover { background: var(--accent); color: var(--primary); }
 
-        .footer { text-align: center; padding: 120px 20px; background: #010409; border-top: 1px solid rgba(255,255,255,0.08); margin-top: 100px; }
-        .footer-brand { color: var(--gold); font-weight: 900; font-size: 1.8rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px; }
-        .footer p { opacity: 0.6; font-size: 1rem; max-width: 600px; margin: 10px auto; }
+        footer { text-align: center; padding: 100px 20px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 100px; }
+        .f-brand { font-size: 2.2rem; color: var(--gold); font-weight: 900; letter-spacing: 3px; }
 
-        @media (max-width: 768px) { 
-            .hero h1 { font-size: 3rem; } 
-            .grid { grid-template-columns: 1fr; }
-            .affiliate-header h2 { font-size: 2.2rem; }
-        }
+        @media (max-width: 768px) { .hero h1 { font-size: 3rem; } .table-wrapper { overflow-x: auto; } }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/918652025006" class="wa-float" target="_blank" title="Connect with Ramesh">
-        <span>💬</span>
-    </a>
+    <a href="https://wa.me/918652025006" class="wa-float" target="_blank">💬</a>
 
-    <section class="hero">
+    <header class="hero">
         <h1>RMV APEX GROUP</h1>
-        <p>Strategic Architecture & Global Wealth Systems <br>Founded by <b>Ramesh Mewalal Vishwakarma</b> 🚩</p>
-    </section>
+        <p>Architecting Wealth & Global Innovation <br>by <b>Ramesh Mewalal Vishwakarma</b> 🚩</p>
+    </header>
 
     <div class="container">
         
         <div class="grid">
-            <div class="pillar-card" style="border: 3px solid var(--gold);">
-                <span class="status-badge status-live">Primary Portal</span>
+            <div class="pillar-card">
                 <h3>Public Hub</h3>
-                <p>यह तुम्हारे साम्राज्य का मुख्य द्वार है जहाँ 18 व्यापारिक श्रेणियां और वैश्विक सेवाएँ प्रदर्शित हैं।</p>
-                <div class="btn-group">
-                    <a href="https://rmvpublichub.vercel.app/" class="btn">VERCEL PORTAL</a>
-                    <a href="https://rmvapexgroup.github.io/RMV-Public-Hub/" class="btn btn-outline">GITHUB ACCESS</a>
-                </div>
+                <p>साम्राज्य का मुख्य गेटवे जहाँ 18 व्यापारिक वर्टिकल्स प्रदर्शित हैं।</p>
+                <a href="https://rmvpublichub.vercel.app/" class="btn">VERCEL HUB</a>
+                <a href="https://rmvapexgroup.github.io/RMV-Public-Hub/" class="btn btn-outline">GITHUB SOURCE</a>
             </div>
 
             <div class="pillar-card">
-                <span class="status-badge status-live">Live</span>
                 <h3>Viral Open</h3>
-                <p>मार्केटिंग विजेट्स और ओपन-सोर्स ग्रोथ टूल्स का रणनीतिक खजाना। वायरल ग्रोथ को यहीं से गति मिलती है।</p>
-                <div class="btn-group">
-                    <a href="https://rmv-viral-opens.vercel.app/" class="btn">ACCESS VERCEL</a>
-                    <a href="https://rmvapexgroup.github.io/RMV-Viral-Open/" class="btn btn-outline">GITHUB SOURCE</a>
-                </div>
+                <p>ग्रोथ हैकिंग और ओपन-सोर्स मार्केटिंग विजेट्स का खजाना।</p>
+                <a href="https://rmv-viral-opens.vercel.app/" class="btn">VERCEL WIDGETS</a>
+                <a href="https://rmvapexgroup.github.io/RMV-Viral-Open/" class="btn btn-outline">GITHUB WIDGETS</a>
             </div>
 
             <div class="pillar-card">
-                <span class="status-badge status-live">Active</span>
                 <h3>Fin-Tools</h3>
-                <p>सटीक वित्तीय गणनाओं के लिए प्रोफेशनल इंजीनियरिंग टूल्स। Wealth Intelligence का मुख्य केंद्र।</p>
-                <div class="btn-group">
-                    <a href="https://rmvfintools.vercel.app/" class="btn">LAUNCH TOOLS</a>
-                    <a href="https://rmvapexgroup.github.io/RMV-FIN-TOOLS/" class="btn btn-outline">SOURCE CODE</a>
-                </div>
+                <p>सटीक वित्तीय गणनाओं के लिए प्रोफेशनल इंजीनियरिंग टूल्स।</p>
+                <a href="https://rmvfintools.vercel.app/" class="btn">VERCEL TOOLS</a>
+                <a href="https://rmvapexgroup.github.io/RMV-FIN-TOOLS/" class="btn btn-outline">GITHUB TOOLS</a>
             </div>
         </div>
 
-        <div class="affiliate-section">
-            <div class="affiliate-header">
-                <h2>📈 RMV REVENUE GLOBAL HUB</h2>
-                <p style="color: #94a3b8; max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
-                    RMV APEX GROUP द्वारा प्रमाणित प्रीमियम वित्तीय सेवाएँ और डिजिटल एसेट्स।
-                </p>
-            </div>
+        <div class="revenue-section">
+            <h2 style="color: var(--gold); font-size: 3rem; margin: 0; font-weight: 900;">🛒 RMV REVENUE GLOBAL HUB</h2>
+            <p style="color: #94a3b8; margin-top: 10px;">Premium Monetization & Certified Global Products</p>
             
-            <div class="affiliate-grid">
-                <div class="affiliate-card">
-                    <span class="status-badge status-live" style="background: var(--gold); color: black;">Premium</span>
+            <div class="rev-grid">
+                <div class="rev-card">
                     <h4>Super Profile</h4>
-                    <p>एक ही स्थान पर सभी डिजिटल एसेट्स, कोर्सेज और प्रोफेशनल बायो तक वैश्विक पहुँच प्राप्त करें।</p>
+                    <p>सभी डिजिटल एसेट्स और प्रोफेशनल बायो के लिए वन-स्टॉप लिंक।</p>
                     <a href="https://superprofile.bio/rmvapexgroup" class="btn" target="_blank">OPEN PROFILE</a>
                 </div>
 
-                <div class="affiliate-card">
-                    <span class="status-badge status-live" style="background: #ffdd00; color: black;">Direct Pay</span>
+                <div class="rev-card">
                     <h4>Instamojo Store</h4>
-                    <p>प्रोफेशनल कंसल्टिंग, लीगल सर्विसेज और सुरक्षित वित्तीय लेनदेन के लिए हमारा आधिकारिक स्टोर।</p>
+                    <p>आधिकारिक पेमेंट गेटवे और डिजिटल उत्पाद स्टोर।</p>
                     <a href="https://rmvapexgroup.myinstamojo.com/" class="btn" target="_blank">VISIT STORE</a>
                 </div>
 
-                <div class="affiliate-card">
-                    <span class="status-badge status-live" style="background: #2563eb;">Global Tech</span>
-                    <h4>Wealth Intelligence</h4>
-                    <p>ClickBank और उच्च-स्तरीय वित्तीय ऑटोमेशन टूल्स के माध्यम से धन सृजन की गुप्त रणनीतियाँ।</p>
-                    <a href="https://e168bjvinntmdt84ssym245jq2.hop.clickbank.net" class="btn" target="_blank">GET MASTERCLASS</a>
+                <div class="rev-card">
+                    <h4>Amazon Essentials</h4>
+                    <p>RMV द्वारा प्रमाणित प्रीमियम हार्डवेयर और बिजनेस बुक्स।</p>
+                    <a href="https://amzn.to/4lTZ0fl" class="btn" target="_blank">SHOP ON AMAZON</a>
+                </div>
+
+                <div class="rev-card">
+                    <h4>Wealth Masterclass</h4>
+                    <p>ClickBank प्रमाणित ग्लोबल वेल्थ बिल्डिंग सिस्टम्स।</p>
+                    <a href="https://e168bjvinntmdt84ssym245jq2.hop.clickbank.net" class="btn" target="_blank">GET ACCESS</a>
                 </div>
             </div>
         </div>
 
-        <div class="social-card">
+        <div class="social-section">
             <h2>🌐 GLOBAL CONNECTIVITY</h2>
             <div class="table-wrapper">
                 <table>
                     <thead>
-                        <tr><th>CHANNEL</th><th>ACCESS LINK</th><th>CHANNEL</th><th>ACCESS LINK</th></tr>
+                        <tr>
+                            <th>ACTUAL SITE NAME</th>
+                            <th>DIRECT ACCESS</th>
+                            <th>ACTUAL SITE NAME</th>
+                            <th>DIRECT ACCESS</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><b>Official Blogger</b></td><td><a href="https://rmvapexgroup.blogspot.com/" target="_blank">Read Insights</a></td>
-                            <td><b>WhatsApp Desk</b></td><td><a href="https://wa.me/918652025006" target="_blank">Message Founder</a></td>
+                            <td><b>WhatsApp Official</b></td>
+                            <td><a href="https://wa.me/918652025006" target="_blank">Chat Founder</a></td>
+                            <td><b>LinkedIn Professional</b></td>
+                            <td><a href="https://www.linkedin.com/in/rmvapexgroup/" target="_blank">View Profile</a></td>
                         </tr>
                         <tr>
-                            <td><b>LinkedIn Network</b></td><td><a href="https://www.linkedin.com/in/rmvapexgroup/" target="_blank">Professional Connect</a></td>
-                            <td><b>YouTube Hub</b></td><td><a href="https://www.youtube.com/@rmvapexgroup" target="_blank">Subscribe Now</a></td>
+                            <td><b>YouTube Hub</b></td>
+                            <td><a href="https://www.youtube.com/@rmvapexgroup" target="_blank">Subscribe</a></td>
+                            <td><b>Official Blogger</b></td>
+                            <td><a href="https://rmvapexgroup.blogspot.com/" target="_blank">Read Insights</a></td>
                         </tr>
                         <tr>
-                            <td><b>Instagram Feed</b></td><td><a href="https://www.instagram.com/rmvapexgroups" target="_blank">Daily Visuals</a></td>
-                            <td><b>X (Twitter)</b></td><td><a href="https://x.com/rmvapexgroup" target="_blank">Real-time Updates</a></td>
+                            <td><b>Instagram Feed</b></td>
+                            <td><a href="https://www.instagram.com/rmvapexgroups" target="_blank">Follow Daily</a></td>
+                            <td><b>GitHub Repository</b></td>
+                            <td><a href="https://github.com/rmvapexgroup" target="_blank">Source Code</a></td>
                         </tr>
                         <tr>
-                            <td><b>Facebook Page</b></td><td><a href="https://www.facebook.com/rmvapexgroups/" target="_blank">Global Community</a></td>
-                            <td><b>Telegram Channel</b></td><td><a href="https://t.me/RMVApexGroupPublicChannel" target="_blank">Join Intelligence</a></td>
+                            <td><b>Facebook Business</b></td>
+                            <td><a href="https://www.facebook.com/rmvapexgroups/" target="_blank">Join Community</a></td>
+                            <td><b>X (Twitter)</b></td>
+                            <td><a href="https://x.com/rmvapexgroup" target="_blank">Latest Feed</a></td>
                         </tr>
                         <tr>
-                            <td><b>Threads Web</b></td><td><a href="https://www.threads.com/@rmvapexgroups" target="_blank">Follow Threads</a></td>
-                            <td><b>GitHub Repository</b></td><td><a href="https://github.com/rmvapexgroup" target="_blank">Code Library</a></td>
+                            <td><b>Telegram Official</b></td>
+                            <td><a href="https://t.me/RMVApexGroupPublicChannel" target="_blank">Join Channel</a></td>
+                            <td><b>Threads Web</b></td>
+                            <td><a href="https://www.threads.com/@rmvapexgroups" target="_blank">Follow Threads</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -207,10 +190,9 @@
 
     </div>
 
-    <footer class="footer">
-        <div class="footer-brand">RMV APEX GROUP 🚩</div>
-        <p>© 2026 | All Rights Reserved. <br><b>Ramesh Mewalal Vishwakarma</b></p>
-        <p style="font-size: 0.85rem; letter-spacing: 1px; color: var(--accent);">Architecting a Wealthy Future through Innovation & Global Strategy.</p>
+    <footer>
+        <div class="f-brand">RMV APEX GROUP 🚩</div>
+        <p>© 2026 | <b>Ramesh Mewalal Vishwakarma</b> <br>Leading with Strategy, Integrity & Innovation.</p>
     </footer>
 
 </body>
