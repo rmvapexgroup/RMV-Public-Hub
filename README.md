@@ -1,20 +1,18 @@
-# 🏛️ RMV-PUBLIC-HUB
-### *The Strategic Digital Ecosystem of RMV APEX GROUP*
+# 🌏 RMV-PUBLIC-HUB
+### *The Ultimate Public Gateway & Ecosystem by RMV APEX GROUP* 🚩
 
-Welcome to the official public gateway of **RMV APEX GROUP**. This repository serves as the central hub for our public assets, financial tools, and digital showrooms.
+**RMV-PUBLIC-HUB** is the primary interface for public engagement, social connectivity, and global marketplace access. Managed by **Ramesh Mewalal Vishwakarma**, this hub centralizes our mission to provide transparent and high-impact digital solutions.
 
-## 👑 Ownership & Leadership
-- **Organization:** RMV APEX GROUP
-- **Owner Admin:** Ramesh Mewalal Vishwakarma 🚩
-- **Mission:** Engineering a Legacy of Strategic Excellence and Financial Empowerment.
+## 👑 Executive Admin
+- **Founder & CEO:** Ramesh Mewalal Vishwakarma
+- **Primary UPI Support:** 8652025006 🇮🇳 (Google Pay/PhonePe/Paytm)
+- **Official WhatsApp:** [+91 86520 25006](https://wa.me/918652025006)
 
-## 🚀 Key Projects in this Hub
-1. **RMV-PUBLIC-HUB Showroom:** The main visual interface for our services.
-2. **RMV-FIN-TOOLS:** Advanced financial calculators and credit algorithms.
-3. **RMV-VIRAL-OPEN:** Frameworks for digital engagement and growth.
+## 🌐 The Global Connectivity Matrix
+This repository hosts the gateway to 34+ official social media platforms and 7+ high-performance revenue hubs (Amazon, ClickBank, Instamojo, etc.).
 
-## 🌐 Connectivity
-Access our complete network through the **Global Connectivity Matrix** located in the [Live Showroom](https://rmvapexgroup.github.io/RMV-Public-Hub/).
+## 💰 Fuel the Vision
+We believe in community-driven growth. Support our public initiatives and open-source contributions directly via **Google Pay (8652025006)**. Your support powers the next generation of financial and digital tools.
 
 ---
-*© 2026 RMV APEX GROUP. All Rights Reserved.*
+*© 2026 RMV APEX GROUP | Transparency • Integrity • Innovation*
